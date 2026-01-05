@@ -1,6 +1,6 @@
 import random
 while True:
-    a = input("Bạn muốn chọn kéo, búa hay bao? ").lower()
+    a = input("Bạn muốn chọn kéo, búa hay bao? ").strip().lower()
 
     if a not in ['kéo', 'búa', 'bao']:
         print("Lựa chọn không hợp lệ. Vui lòng chọn kéo, búa hoặc bao.")
@@ -14,7 +14,7 @@ while True:
     else:
         print("Bạn thua rồi ")
     while True:
-        b = input("Bạn muốn chơi lại không? (có/không): ").lower()
+        b = input("Bạn muốn chơi lại không? (có/không): ").strip().lower()
         if b not in ['có', 'không']:
             print("Vui lòng trả lời 'có' hoặc 'không'.")
             continue
@@ -25,3 +25,4 @@ while True:
             break
     if(b == 'không'):
         break
+
